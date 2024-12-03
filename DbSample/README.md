@@ -36,7 +36,8 @@ project. All changes to the model are made in the main project.
     2. The first migration is usually named InitialCreate.
     3. Following migrations are created by comparing the current model with the last migration. They are usually named
        after the changes they introduce.
-4. Check the migration code, especially if it contains data manipulation, column renaming, or other complex operations. You should correct it if necessary, while addind necessary comments.
+4. Check the migration code, especially if it contains data manipulation, column renaming, or other complex operations.
+   You should correct it if necessary, while adding necessary comments.
 5. Check the non-pending migration by running: ``dotnet ef migrations list``
 6. Generate the incremental SQL script for the migration with the following
    command: ``dotnet ef migrations script <PreviousNonPendingLatestMigration> --idempotent -o migrations/R__<Timestamp_MigrationName>.sql``
@@ -64,8 +65,13 @@ It is your responsibility to apply the migrations to your developer database. Th
 5. Check applied migrations status with the following command: ``dotnet ef migrations list``
     1. All migrations should be applied to your database.
 
+However, you can also apply the migrations using FlyWay while targeting your local database, just as for Online
+databases.
+
 ### Applying migrations to a specific environment
+
 Before applying migrations to online databases, always test the migration locally and backup the database.
+
 #### Alpha
 
 #### Beta

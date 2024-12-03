@@ -30,3 +30,8 @@ schemas = [ "Init" ]
 url = "jdbc:postgresql://localhost:5432/DbSample2"
 schemas = [ "Init" ]
 displayName = "DbSample2"
+
+[environments.DbSample3]
+url = "jdbc:postgresql://localhost:5432/DbSample3"
+schemas = [ "Init" ]
+displayName = "DbSample3"
