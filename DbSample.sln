@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbSample.Migrations", "DbSample.Migrations\DbSample.Migrations.csproj", "{D1A21237-1B67-4F33-8818-B21960671C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbSample.ConsoleApp", "DbSample.ConsoleApp\DbSample.ConsoleApp.csproj", "{A3B23D32-B770-4C79-867E-B9E16E97AFC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbSample", "DbSample\DbSample.csproj", "{19534264-03C0-4341-90F9-E4FA4A8A193E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1A21237-1B67-4F33-8818-B21960671C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A21237-1B67-4F33-8818-B21960671C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A21237-1B67-4F33-8818-B21960671C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A21237-1B67-4F33-8818-B21960671C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B23D32-B770-4C79-867E-B9E16E97AFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B23D32-B770-4C79-867E-B9E16E97AFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B23D32-B770-4C79-867E-B9E16E97AFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B23D32-B770-4C79-867E-B9E16E97AFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19534264-03C0-4341-90F9-E4FA4A8A193E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19534264-03C0-4341-90F9-E4FA4A8A193E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19534264-03C0-4341-90F9-E4FA4A8A193E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19534264-03C0-4341-90F9-E4FA4A8A193E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
