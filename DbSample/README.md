@@ -39,7 +39,7 @@ project. All changes to the model are made in the main project.
 4. Check the migration code, especially if it contains data manipulation, column renaming, or other complex operations. You should correct it if necessary, while addind necessary comments.
 5. Check the non-pending migration by running: ``dotnet ef migrations list``
 6. Generate the incremental SQL script for the migration with the following
-   command: ``dotnet ef migrations script <PreviousNonPendingLatestMigration> --idempotent -o migrations/<Timestamp_MigrationName>.sql``
+   command: ``dotnet ef migrations script <PreviousNonPendingLatestMigration> --idempotent -o migrations/R__<Timestamp_MigrationName>.sql``
     1. This creates a migration script that can be run on an up-to-date database.
     2. The script is idempotent, meaning it is meant to run multiple times without causing errors. However, the
        generated code should be checked and corrected if necessary.
