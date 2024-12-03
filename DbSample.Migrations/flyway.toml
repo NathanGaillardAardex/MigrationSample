@@ -24,14 +24,14 @@ ignoreNewlinesInTextObjects = "off"
 
 [environments.DbSample]
 url = "jdbc:postgresql://localhost:5432/DbSample"
-schemas = [ "Init" ]
+schemas = [ "public" ]
 
 [environments.DbSample2]
 url = "jdbc:postgresql://localhost:5432/DbSample2"
-schemas = [ "Init" ]
+schemas = [ "public" ]
 displayName = "DbSample2"
 
 [environments.DbSample3]
 url = "jdbc:postgresql://localhost:5432/DbSample3"
-schemas = [ "Init" ]
+schemas = [ "public" ]
 displayName = "DbSample3"

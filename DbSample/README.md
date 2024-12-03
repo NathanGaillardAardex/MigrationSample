@@ -40,7 +40,7 @@ project. All changes to the model are made in the main project.
    You should correct it if necessary, while adding necessary comments.
 5. Check the non-pending migration by running: ``dotnet ef migrations list``
 6. Generate the incremental SQL script for the migration with the following
-   command: ``dotnet ef migrations script <PreviousNonPendingLatestMigration> --idempotent -o migrations/R__<Timestamp_MigrationName>.sql``
+   command: ``dotnet ef migrations script <NonPendingLatestMigration> --idempotent -o migrations/R__<Timestamp_MigrationName>.sql``
     1. This creates a migration script that can be run on an up-to-date database.
     2. The script is idempotent, meaning it is meant to run multiple times without causing errors. However, the
        generated code should be checked and corrected if necessary.
@@ -70,10 +70,35 @@ databases.
 
 ### Applying migrations to a specific environment
 
-Before applying migrations to online databases, always test the migration locally and backup the database.
+# Option A
+
+Before applying migrations to online databases, always test the migration locally.
+
+Migrations are likely to be handled by a python script, runnable through a CI/CD pipeline.
+
+The script should:
+
+- Discover the clinical project databases
+- For each database:
+    - Backup the database
+    - Apply migrations using FlyWay
+    - Raise errors if necessary
+    - If one migration script failed, rollback the database to the backup state
 
 #### Alpha
 
 #### Beta
 
 #### Production
+
+# Option B
+
+A premium license of FlyWay allows us to run migrations on multiple databases at once, as well as rollback the changes
+if necessary
+
+#### Alpha
+
+#### Beta
+
+#### Production
+
