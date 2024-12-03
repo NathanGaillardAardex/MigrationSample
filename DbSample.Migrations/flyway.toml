@@ -1,6 +1,6 @@
 databaseType = "PostgreSql"
 id = "fe5fa116-7d7b-422c-844c-55f93f0385a6"
-name = "FlywayMigrations"
+name = "DbSample.Migrations"
 
 [flyway]
 locations = [ "filesystem:migrations" ]
